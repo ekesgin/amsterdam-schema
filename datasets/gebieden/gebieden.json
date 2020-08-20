@@ -53,19 +53,16 @@
           "beginGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "begingeldigheid",
             "description": "De datum waarop het object is gecreëerd."
           },
           "eindGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "eindgeldigheid",
             "description": "De datum waarop het object is komen te vervallen."
           },
           "ligtInBuurt": {
             "type": "string",
             "relation": "gebieden:buurten",
-            "provenance": "ligtinbuurt",
             "description": "De buurt waar het bouwblok in ligt."
           },
           "geometrie": {
@@ -119,13 +116,11 @@
           "beginGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "begingeldigheid",
             "description": "De datum waarop het object is gecreëerd."
           },
           "eindGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "eindgeldigheid",
             "description": "De datum waarop het object is komen te vervallen."
           },
           "documentdatum": {
@@ -144,7 +139,6 @@
           "ligtInWijk": {
             "type": "string",
             "relation": "gebieden:wijken",
-            "provenance": "ligtinwijk",
             "description": "De wijk waar de buurt in ligt."
           },
           "geometrie": {
@@ -198,13 +192,11 @@
           "beginGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "begingeldigheid",
             "description": "De datum waarop het object is gecreëerd."
           },
           "eindGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "eindgeldigheid",
             "description": "De datum waarop het object is komen te vervallen."
           },
           "documentdatum": {
@@ -223,7 +215,6 @@
           "ligtInStadsdeel": {
             "type": "string",
             "relation": "gebieden:stadsdelen",
-            "provenance": "ligtinstadsdeel",
             "description": "Het stadsdeel waar de wijk in ligt."
           },
           "geometrie": {
@@ -277,13 +268,11 @@
           "beginGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "begingeldigheid",
             "description": "De datum waarop het object is gecreëerd."
           },
           "eindGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "eindgeldigheid",
             "description": "De datum waarop het object is komen te vervallen."
           },
           "documentdatum": {
@@ -298,7 +287,6 @@
           "ligtInStadsdeel": {
             "type": "string",
             "relation": "gebieden:stadsdelen",
-            "provenance": "ligtinstadsdeel",
             "description": "Het stadsdeel waar het gebied in ligt."
           },
           "bestaatUitBuurten": {
@@ -307,7 +295,6 @@
               "type": "string"
             },
             "relation": "gebieden:buurten",
-            "provenance": "bestaatuitbuurten",
             "description": "De buurten waaruit het object bestaat."
           },
           "geometrie": {
@@ -361,13 +348,11 @@
           "beginGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "begingeldigheid",
             "description": "De datum waarop het object is gecreëerd."
           },
           "eindGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "eindgeldigheid",
             "description": "De datum waarop het object is komen te vervallen."
           },
           "documentdatum": {
@@ -382,7 +367,6 @@
           "ligtInStadsdeel": {
             "type": "string",
             "relation": "gebieden:stadsdelen",
-            "provenance": "ligtinstadsdeel",
             "description": "Het stadsdeel waar het gebied in ligt."
           },
           "bestaatUitBuurten": {
@@ -391,7 +375,6 @@
               "type": "string"
             },
             "relation": "gebieden:buurten",
-            "provenance": "bestaatuitbuurten",
             "description": "De buurten waaruit het object bestaat."
           },
           "geometrie": {
@@ -445,13 +428,11 @@
           "beginGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "begingeldigheid",
             "description": "De datum waarop het object is gecreëerd."
           },
           "eindGeldigheid": {
             "type": "string",
             "format": "date",
-            "provenance": "eindgeldigheid",
             "description": "De datum waarop het object is komen te vervallen."
           },
           "documentdatum": {
@@ -466,7 +447,6 @@
           "ligtInGemeente": {
             "type": "string",
             "$comment": "relation brk:gemeentes",
-            "provenance": "ligtingemeente",
             "description": "De gemeente waar het stadsdeel in ligt."
           },
           "geometrie": {
