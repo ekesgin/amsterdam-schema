@@ -1,0 +1,217 @@
+{
+  "type": "dataset",
+  "id": "klantbeeld",
+  "title": "Basisregistratie Personen (BRP)",
+  "status": "beschikbaar",
+  "description": "Deze dataset maakt de basisregistratie personen toegankelijk, bij gebruik van login credentials. De velden zijn gebaseerd op het schema van Haal-Centraal.",
+  "version": "0.0.1",
+  "crs": "EPSG:28992",
+  "auth": "BRP/R",
+    "tables": [
+        {
+            "id": "BvAdresBewonershistorie",
+            "type": "table",
+            "schema": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "idAdresBewonershistorie": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "adresseerbaarObject": {
+                        "type": "string",
+                        "relation": "klantpeeld:bv_adresseerbaar_object_actueel",
+                        "description": "Historisch adres"
+                    },
+                    "idAdres": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "straatnaam": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "huisnummer": {
+                        "type": "decimal",
+                        "description": ""
+                    }
+                    "huisletter": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "toevoegingHuisnummer": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "postcode": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "postcodeNumeriek": {
+                        "type": "integer",
+                        "description": ""
+                    },
+                    "administratienummer": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "bsn": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "begindatumBewoning": {
+                        "type": "date",
+                        "description": ""
+                    }
+                    "einddatum_bewoning": {
+                        "type": "date",
+                        "description": ""
+                    },
+                    "redenEindeBewoning": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "indicatieActueelHistorie": {
+                        "type": "boolean",
+                        "description": ""
+                    },
+                    "begindatumOnderzoek": {
+                        "type": "date",
+                        "description": ""
+                    },
+                    "einddatumOnderzoek": {
+                        "type": "date",
+                        "description": ""
+                    },
+                    "datumOverlijden": {
+                        "type": "date",
+                        "description": ""
+                    },
+                    "naamOverlijdensplaats": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "landOverlijden": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "gemeenteWaarnrVertrokken": {
+                        "type": "string",
+                        "description": ""
+                    },
+                    "datumUitschrijvingGemeente": {
+                        "type": "date",
+                        "description": ""
+                    },
+                    "landWaarnaarVertrokken": {
+                        "type": "string",
+                        "description": ""
+                    }
+                }
+            }
+        },
+        {
+            "id": "BvAdresseerbaarObjectActueel",
+            "type": "table",
+            "schema": {
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    id_adresseerbaar_object
+                    meta_valid_from
+                    meta_ref_source
+                    meta_ref_source_type
+                    meta_source_date
+                    volgnummer_adresseerbaar_object
+                    id_adres_hoofdadres
+                    volgnummer_adres_hoofdadres
+                    postcode_hoofdadres
+                    postcode_hoofdadres_numeriek
+                    straatnaam_hoofdadres
+                    huisnummer_hoofdadres
+                    huisletter_hoofdadres
+                    huisnummertoevoeging_hoofdadres
+                    woonplaats_hoofdadres
+                    woonplaats_identificatie_hoofdadres
+                    woonplaats_volgnummer_hoofdadres
+                    gemeente_brk
+                    gemeente_identificatie_brk
+                    gemeente_volgnummer_brk
+                    type_adresseerbaar_object
+                    registratiedatum
+                    aanduiding_in_onderzoek
+                    geconstateerd
+                    aantal_nevenadressen
+                    is_woz_wob_soortobject
+                    status
+                    gebruiksdoel
+                    gebruiksdoel_woonfunctie
+                    gebruiksdoel_gezondheidszorgfunctie
+                    aantal_eenheden_complex
+                    oppervlakte
+                    aantal_kamers
+                    toegang_verdieping
+                    toegang_beschrijving
+                    aantal_bouwlagen
+                    hoogste_bouwlaag
+                    laagste_bouwlaag
+                    eigendomsverhouding
+                    bouwblok_identificatie
+                    bouwblok_volgnummer
+                    bouwblok_code
+                    buurt
+                    buurt_identificatie
+                    buurt_volgnummer
+                    buurt_code
+                    wijk
+                    wijk_identificatie
+                    wijk_volgnummer
+                    wijk_code
+                    ggw
+                    ggw_identificatie
+                    ggw_volgnummer
+                    ggw_code
+                    ggp
+                    ggp_identificatie
+                    ggp_volgnummer
+                    ggp_code
+                    stadsdeel
+                    stadsdeel_identificatie
+                    stadsdeel_volgnummer
+                    stadsdeel_code
+                    begin_geldigheid
+                    eind_geldigheid
+                    documentdatum
+                    reden_opvoer
+                    reden_afvoer
+                    calc_num_persons
+                    calc_num_verschillende_inschrijvingen_excl_geboortes
+                    calc_num_adults
+                    calc_num_aged_younger_18
+                    calc_num_aged_1617
+                    calc_num_aged_younger_15
+                    calc_num_geheim
+                    calc_age_min
+                    calc_age_max
+                    calc_age_spread
+                    calc_num_achternamen
+                    calc_num_adresgegeven_in_onderzoek_ind
+                    calc_max_days_since_begin_onderzoek
+                    calc_laatste_inschrijfdatum_op_adres_niet_geboort
+                    calc_num_relaties_op_ander_adres
+                    calc_num_ex_relaties_op_adres
+                    calc_num_relaties_op_adres
+                    calc_num_inuitschrijvingen_5jaren
+                    calc_num_adults_male
+                    calc_num_adults_female
+                    calc_num_adults_unknown
+                    calc_num_woonadres
+                    calc_num_briefadres
+                }
+            }
+        }
+  ]
+}
