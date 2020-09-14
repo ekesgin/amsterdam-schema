@@ -36,7 +36,7 @@
                     "huisnummer": {
                         "type": "decimal",
                         "description": ""
-                    }
+                    },
                     "huisletter": {
                         "type": "string",
                         "description": ""
@@ -64,7 +64,7 @@
                     "begindatumBewoning": {
                         "type": "date",
                         "description": ""
-                    }
+                    },
                     "einddatum_bewoning": {
                         "type": "date",
                         "description": ""
@@ -120,96 +120,295 @@
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                    id_adresseerbaar_object
-                    meta_valid_from
-                    meta_ref_source
-                    meta_ref_source_type
-                    meta_source_date
-                    volgnummer_adresseerbaar_object
-                    id_adres_hoofdadres
-                    volgnummer_adres_hoofdadres
-                    postcode_hoofdadres
-                    postcode_hoofdadres_numeriek
-                    straatnaam_hoofdadres
-                    huisnummer_hoofdadres
-                    huisletter_hoofdadres
-                    huisnummertoevoeging_hoofdadres
-                    woonplaats_hoofdadres
-                    woonplaats_identificatie_hoofdadres
-                    woonplaats_volgnummer_hoofdadres
-                    gemeente_brk
-                    gemeente_identificatie_brk
-                    gemeente_volgnummer_brk
-                    type_adresseerbaar_object
-                    registratiedatum
-                    aanduiding_in_onderzoek
-                    geconstateerd
-                    aantal_nevenadressen
-                    is_woz_wob_soortobject
-                    status
-                    gebruiksdoel
-                    gebruiksdoel_woonfunctie
-                    gebruiksdoel_gezondheidszorgfunctie
-                    aantal_eenheden_complex
-                    oppervlakte
-                    aantal_kamers
-                    toegang_verdieping
-                    toegang_beschrijving
-                    aantal_bouwlagen
-                    hoogste_bouwlaag
-                    laagste_bouwlaag
-                    eigendomsverhouding
-                    bouwblok_identificatie
-                    bouwblok_volgnummer
-                    bouwblok_code
-                    buurt
-                    buurt_identificatie
-                    buurt_volgnummer
-                    buurt_code
-                    wijk
-                    wijk_identificatie
-                    wijk_volgnummer
-                    wijk_code
-                    ggw
-                    ggw_identificatie
-                    ggw_volgnummer
-                    ggw_code
-                    ggp
-                    ggp_identificatie
-                    ggp_volgnummer
-                    ggp_code
-                    stadsdeel
-                    stadsdeel_identificatie
-                    stadsdeel_volgnummer
-                    stadsdeel_code
-                    begin_geldigheid
-                    eind_geldigheid
-                    documentdatum
-                    reden_opvoer
-                    reden_afvoer
-                    calc_num_persons
-                    calc_num_verschillende_inschrijvingen_excl_geboortes
-                    calc_num_adults
-                    calc_num_aged_younger_18
-                    calc_num_aged_1617
-                    calc_num_aged_younger_15
-                    calc_num_geheim
-                    calc_age_min
-                    calc_age_max
-                    calc_age_spread
-                    calc_num_achternamen
-                    calc_num_adresgegeven_in_onderzoek_ind
-                    calc_max_days_since_begin_onderzoek
-                    calc_laatste_inschrijfdatum_op_adres_niet_geboort
-                    calc_num_relaties_op_ander_adres
-                    calc_num_ex_relaties_op_adres
-                    calc_num_relaties_op_adres
-                    calc_num_inuitschrijvingen_5jaren
-                    calc_num_adults_male
-                    calc_num_adults_female
-                    calc_num_adults_unknown
-                    calc_num_woonadres
-                    calc_num_briefadres
+                    "id_adresseerbaar_object": {
+                        "type": "string"
+                    },
+                  "meta_valid_from": {
+                    "type": "date-time"
+                  },
+                    "meta_ref_source": {
+                        "type": "string"
+                    },
+                    "meta_ref_source_type": {
+                        "type": "string"
+                    },
+                    "meta_source_date": {
+                        "type": "date"
+                    },
+                    "volgnummer_adresseerbaar_object": {
+                        "type": "integer"
+                    },
+                    "id_adres_hoofdadres": {
+                        "type": "string"
+                    },
+                    "volgnummer_adres_hoofdadres": {
+                        "type": "integer"
+                    },
+                    "postcode_hoofdadres": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "postcode_hoofdadres_numeriek": {
+                        "type": "integer"
+                    },
+                    "straatnaam_hoofdadres": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "huisnummer_hoofdadres": {
+                        "type": "integer"
+                    },
+                    "huisletter_hoofdadres": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "huisnummertoevoeging_hoofdadres": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "woonplaats_hoofdadres": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "woonplaats_identificatie_hoofdadres": {
+                        "type": "string"
+                    },
+                    "woonplaats_volgnummer_hoofdadres": {
+                        "type": "integer"
+                    },
+                    "gemeente_brk": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "gemeente_identificatie_brk": {
+                        "type": "string"
+                    },
+                    "gemeente_volgnummer_brk": {
+                        "type": "integer"
+                    },
+                    "type_adresseerbaar_object": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "registratiedatum": {
+                        "type": "date"
+                    },
+                    "aanduiding_in_onderzoek": {
+                        "type": "boolean"
+                    },
+                    "geconstateerd": {
+                        "type": "boolean"
+                    },
+                    "aantal_nevenadressen": {
+                        "type": "integer"
+                    },
+                    "is_woz_wob_soortobject": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "status": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "gebruiksdoel": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "gebruiksdoel_woonfunctie": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "gebruiksdoel_gezondheidszorgfunctie": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "aantal_eenheden_complex": {
+                        "type": "integer"
+                    },
+                    "oppervlakte": {
+                        "type": "integer"
+                    },
+                    "aantal_kamers": {
+                        "type": "integer"
+                    },
+                    "toegang_verdieping": {
+                        "type": "integer"
+                    },
+                    "toegang_beschrijving": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "aantal_bouwlagen": {
+                        "type": "integer"
+                    },
+                    "hoogste_bouwlaag": {
+                        "type": "integer"
+                    },
+                    "laagste_bouwlaag": {
+                        "type": "integer"
+                    },
+                    "eigendomsverhouding": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "bouwblok_identificatie": {
+                        "type": "string"
+                    },
+                    "bouwblok_volgnummer": {
+                        "type": "integer"
+                    },
+                    "bouwblok_code": {
+                        "type": "string"
+                    },
+                    "buurt": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "buurt_identificatie": {
+                        "type": "string"
+                    },
+                    "buurt_volgnummer": {
+                        "type": "integer"
+                    },
+                    "buurt_code": {
+                        "type": "string"
+                    },
+                    "wijk": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "wijk_identificatie": {
+                        "type": "string"
+                    },
+                    "wijk_volgnummer": {
+                        "type": "integer"
+                    },
+                    "wijk_code": {
+                        "type": "string"
+                    },
+                    "ggw": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "ggw_identificatie": {
+                        "type": "string"
+                    },
+                    "ggw_volgnummer": {
+                        "type": "integer"
+                    },
+                    "ggw_code": {
+                        "type": "string"
+                    },
+                    "ggp": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "ggp_identificatie": {
+                        "type": "string"
+                    },
+                    "ggp_volgnummer": {
+                        "type": "integer"
+                    },
+                    "ggp_code": {
+                        "type": "string"
+                    },
+                    "stadsdeel": {
+                        "type": "string",
+                        "format": "citext"
+                    },
+                    "stadsdeel_identificatie": {
+                        "type": "string"
+                    },
+                    "stadsdeel_volgnummer": {
+                        "type": "integer"
+                    },
+                    "stadsdeel_code": {
+                        "type": "string"
+                    },
+                    "begin_geldigheid": {
+                        "type": "date"
+                    },
+                    "eind_geldigheid": {
+                        "type": "date"
+                    },
+                    "documentdatum": {
+                        "type": "date"
+                    },
+                    "reden_opvoer": {
+                        "type": "string"
+                    },
+                    "reden_afvoer": {
+                        "type": "string"
+                    },
+                    "calc_num_persons": {
+                        "type": "integer"
+                    },
+                    "calc_num_verschillende_inschrijvingen_excl_geboortes": {
+                        "type": "integer"
+                    },
+                    "calc_num_adults": {
+                        "type": "integer"
+                    },
+                    "calc_num_aged_younger_18": {
+                        "type": "integer"
+                    },
+                    "calc_num_aged_1617": {
+                        "type": "integer"
+                    },
+                    "calc_num_aged_younger_15": {
+                        "type": "integer"
+                    },
+                    "calc_num_geheim": {
+                        "type": "integer"
+                    },
+                    "calc_age_min": {
+                        "type": "integer"
+                    },
+                    "calc_age_max": {
+                        "type": "integer"
+                    },
+                    "calc_age_spread": {
+                        "type": "integer"
+                    },
+                    "calc_num_achternamen": {
+                        "type": "integer"
+                    },
+                    "calc_num_adresgegeven_in_onderzoek_ind": {
+                        "type": "integer"
+                    },
+                    "calc_max_days_since_begin_onderzoek": {
+                        "type": "integer"
+                    },
+                    "calc_laatste_inschrijfdatum_op_adres_niet_geboort": {
+                        "type": "date"
+                    },
+                    "calc_num_relaties_op_ander_adres": {
+                        "type": "integer"
+                    },
+                    "calc_num_ex_relaties_op_adres": {
+                        "type": "integer"
+                    },
+                    "calc_num_relaties_op_adres": {
+                        "type": "integer"
+                    },
+                    "calc_num_inuitschrijvingen_5jaren": {
+                        "type": "integer"
+                    },
+                    "calc_num_adults_male": {
+                        "type": "integer"
+                    },
+                    "calc_num_adults_female": {
+                        "type": "integer"
+                    },
+                    "calc_num_adults_unknown": {
+                        "type": "integer"
+                    },
+                    "calc_num_woonadres": {
+                        "type": "integer"
+                    },
+                    "calc_num_briefadres": {
+                        "type": "integer"
+                    },
                 }
             }
         }

@@ -1,0 +1,25 @@
+{
+    "scopes": {
+        "api": {
+            "BvAdresBewonershistorie": {
+                "table": "BRK/RO",
+                "fields": {
+                    "bsn": "BRK/RS",
+                    "adresseerbaarObject": "BRK/RSN",
+                    "begindatumOnderzoek": "BRK/RS",
+                    "einddatumOnderzoek": "BRK/RS",
+                    "begindatumBewoning": "BRK/RS",
+                    "einddatumBewoning": "BRK/RS"
+                }
+            }
+        },
+        "db": {
+            "BvAdresBewonershistorie": {
+                "table": "read-bi-adresonderzoek,read-oov-bibob-centraal,read-oov-bibob-decentraal",
+                "fields": {
+                    "adresseerbaarObject": "read-bi-adresonderzoek"
+                }
+            }
+        }
+    }
+}
